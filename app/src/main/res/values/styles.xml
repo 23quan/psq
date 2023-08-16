@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="dialog_normal" parent="@android:style/Theme.Dialog">
+        <!--  设置dialog区域（包含标题部分）前景，会遮盖windowContentOverlay  windowBackground   BackgroundDimEnabled    -->
+        <item name="android:windowFrame">@null</item>
+        <!--  表示浮在屏幕上： true  在屏幕中心，相当于浮在页面上；  false 相当于整个盖在activity上  -->
+        <item name="android:windowIsFloating">true</item>
+        <!--  是否全屏，配合android:windowIsFloating = false使用  全屏时会遮盖状态栏  -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <!--  设置dialog是否没有标题  -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <declare-styleable name="CustomTextView">
+        <attr name="ctvBorderWidth" format="dimension" />
+        <attr name="ctvBorderColor" format="color" />
+        <attr name="ctvRadius" format="dimension" />
+        <attr name="ctvBackgroundColor" format="color" />
+        <attr name="ctvDrawWidth" format="float" />
+        <attr name="ctvDrawColor" format="color" />
+        <attr name="ctvDrawTop" format="boolean" />
+        <attr name="ctvDrawBottom" format="boolean" />
+        <attr name="ctvDrawLeft" format="boolean" />
+        <attr name="ctvDrawRight" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomFrameLayout">
+        <attr name="cflBorderWidth" format="dimension" />
+        <attr name="cflBorderColor" format="color" />
+        <attr name="cflRadius" format="dimension" />
+        <attr name="cflBackgroundColor" format="color" />
+        <attr name="cflDrawWidth" format="float" />
+        <attr name="cflDrawColor" format="color" />
+        <attr name="cflDrawTop" format="boolean" />
+        <attr name="cflDrawBottom" format="boolean" />
+        <attr name="cflDrawLeft" format="boolean" />
+        <attr name="cflDrawRight" format="boolean" />
+    </declare-styleable>
+</resources>
